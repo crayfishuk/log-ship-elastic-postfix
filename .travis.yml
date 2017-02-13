@@ -14,6 +14,7 @@ matrix:
     fast_finish: true
 
 services:
+    - redis-server
     - elasticsearch
 
 # wait for elasticsearch to start up
