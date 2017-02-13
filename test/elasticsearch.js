@@ -94,7 +94,7 @@ describe('log-ship-elastic-postfix', function () {
 
     }
     else {
-      it.skip('needs elasticsearch available', function (done) {
+      it.skip('needs elasticsearch available: ' + hostName, function (done) {
         done();
       });
     }
