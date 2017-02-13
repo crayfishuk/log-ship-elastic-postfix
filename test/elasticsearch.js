@@ -17,7 +17,7 @@ describe('log-ship-elastic-postfix', function () {
       done();
     });
 
-    if (/(?:travis|worker|dev-test)/.test(hostName)) {
+    if (/(?:travis|worker|dev-test|testing-docker)/.test(hostName)) {
       // gotta have ES available to test these...
 
       before(function (done) {
